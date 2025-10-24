@@ -8,6 +8,7 @@ app.use(express.json());
 
 require('./mock/user')(app);
 require('./mock/task')(app);
+require('./mock/region')(app);
 
 // 启动服务
 const PORT = 3000;

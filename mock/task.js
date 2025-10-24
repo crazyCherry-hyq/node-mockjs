@@ -8,8 +8,8 @@ module.exports = (app) => {
         {
           'id|+1': 1,
           companyName: '@ctitle(3, 12)', // 中文酒店名
-          position: '@pick(["前台接待", "客房服务员", "清洁员", "厨房帮工", "保安员"， “销售员”, "咨客", "切菜员"])',
-          region: '@pick(["天河区", "越秀区", "荔湾区", "白云区", "海珠区"])',
+          position: '@pick(前台接待, 客房服务员, 清洁员, 厨房帮工, 保安员, 销售员, 咨客, 切菜员)',
+          region: '@pick(天河区, 越秀区, 荔湾区, 白云区, 海珠区)',
           salary: '@integer(18, 35)', // 每小时工资
           unit: '元/小时',
           dateRange: () => {
@@ -42,8 +42,8 @@ module.exports = (app) => {
         {
           'id|+1': 1,
           companyName: '@ctitle(6, 12)', // 中文酒店名
-          position: '@pick(["前台接待", "客房服务员", "清洁员", "厨房帮工", "保安员"， “销售员”, "咨客", "切菜员"])',
-          region: '@pick(["天河区", "越秀区", "荔湾区", "白云区", "海珠区"])',
+          position: '@pick(前台接待, 客房服务员, 清洁员, 厨房帮工, 保安员, 销售员, 咨客, 切菜员)',
+          region: '@pick(天河区, 越秀区, 荔湾区, 白云区, 海珠区)',
           salary: '@integer(18, 35)', // 每小时工资
           unit: '元/小时',
           dateRange: () => {
@@ -75,8 +75,8 @@ module.exports = (app) => {
 
     const data = Mock.mock({
       companyName: '@ctitle(6, 12)',
-      position: '@pick(["前台接待", "客房服务员", "清洁员", "厨房帮工", "保安员"， “销售员”, "咨客", "切菜员"])',
-      region: '@pick(["天河区", "越秀区", "白云区", "海珠区"])',
+      position: '@pick(前台接待, 客房服务员, 清洁员, 厨房帮工, 保安员, 销售员, 咨客, 切菜员)',
+      region: '@pick(天河区, 越秀区, 荔湾区, 白云区, 海珠区)',
       revenueTotal: '@integer(500, 800)',
       dateRange: '2025-10-20 至 2025-10-22 共 3 天',
       workTime: '08:00-11:00',
